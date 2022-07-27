@@ -39,7 +39,7 @@ if __name__ == "__main__":
             IS_VALID.set(data["is_valid"])
             POWER.set(data["power"])
             TOTAL.set(data["total"])
-        except Exception as e:
-            traceback.print_exception(e)
+        except Exception:
+            traceback.print_exc()
 
         sleep(interval)
