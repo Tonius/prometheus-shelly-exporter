@@ -23,7 +23,7 @@ TOTAL = Gauge(
 if __name__ == "__main__":
     port = int(os.environ.get("PROMETHEUS_SHELLY_EXPORTER_PORT", "9050"))
     interval = int(os.environ.get("PROMETHEUS_SHELLY_EXPORTER_INTERVAL", "1"))
-    shelly_url = os.environ.get("PROMETHEUS_SHELLY_URL")
+    shelly_url = os.environ.get("PROMETHEUS_SHELLY_EXPORTER_SHELLY_URL")
     if shelly_url is None:
         raise Exception("No Shelly URL provided")
 
